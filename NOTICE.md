@@ -1,7 +1,7 @@
 # NOTICE
 
 AccessibleFonts
-Copyright (c) 2024
+Copyright (c) 2026
 
 This software bundles the following open source fonts. Each font is distributed
 under its respective license, included in the package.
