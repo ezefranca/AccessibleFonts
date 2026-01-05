@@ -1,0 +1,117 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Getting Started with AccessibleFonts") {
+        Learn how to integrate accessibility-focused fonts into your SwiftUI, UIKit, and AppKit applications.
+        
+        @Image(source: "accessible-fonts-hero.png", alt: "AccessibleFonts logo showing various font samples")
+    }
+    
+    @Section(title: "Using AccessibleFonts in SwiftUI") {
+        @ContentAndMedia {
+            The SwiftUI integration provides two ways to apply accessible fonts: the `Font.accessible()` factory method and the `.accessibleFont()` view modifier.
+        }
+        
+        @Steps {
+            @Step {
+                Import the AccessibleFonts module in your SwiftUI view.
+                
+                @Code(name: "ContentView.swift", file: "quickstart-01.swift")
+            }
+            
+            @Step {
+                Use the `Font.accessible()` method to create a font with a specific family and size.
+                
+                @Code(name: "ContentView.swift", file: "quickstart-02.swift")
+            }
+            
+            @Step {
+                Apply different weights to your text using the `weight` parameter.
+                
+                @Code(name: "ContentView.swift", file: "quickstart-03.swift")
+            }
+            
+            @Step {
+                Use the `.accessibleFont()` view modifier for a more SwiftUI-native syntax.
+                
+                @Code(name: "ContentView.swift", file: "quickstart-04.swift")
+            }
+            
+            @Step {
+                Enable Dynamic Type support by specifying a text style with `relativeTo`.
+                
+                @Code(name: "ContentView.swift", file: "quickstart-05.swift")
+            }
+        }
+    }
+    
+    @Section(title: "Using AccessibleFonts in UIKit") {
+        @ContentAndMedia {
+            UIKit integration provides the `UIFont.accessible()` method with automatic Dynamic Type scaling via `UIFontMetrics`.
+        }
+        
+        @Steps {
+            @Step {
+                Import AccessibleFonts and create a font using `UIFont.accessible()`.
+                
+                @Code(name: "ViewController.swift", file: "quickstart-uikit-01.swift")
+            }
+            
+            @Step {
+                Specify a text style for proper Dynamic Type scaling.
+                
+                @Code(name: "ViewController.swift", file: "quickstart-uikit-02.swift")
+            }
+        }
+    }
+    
+    @Section(title: "Using AccessibleFonts in AppKit") {
+        @ContentAndMedia {
+            AppKit integration works similarly to UIKit, with `NSFont.accessible()` for macOS applications.
+        }
+        
+        @Steps {
+            @Step {
+                Import AccessibleFonts and create fonts for your macOS views.
+                
+                @Code(name: "ViewController.swift", file: "quickstart-appkit-01.swift")
+            }
+        }
+    }
+    
+    @Section(title: "Choosing the Right Font") {
+        @ContentAndMedia {
+            Each font family in AccessibleFonts serves a specific accessibility purpose. Choose based on your users' needs.
+        }
+        
+        @Steps {
+            @Step {
+                **OpenDyslexic** - Use when your app is specifically designed for users with dyslexia. The weighted bottoms help prevent letter rotation and flipping.
+                
+                @Code(name: "FontChoice.swift", file: "quickstart-choice-01.swift")
+            }
+            
+            @Step {
+                **Atkinson Hyperlegible** - Ideal for apps used by people with low vision. Created by the Braille Institute with maximized letter differentiation.
+                
+                @Code(name: "FontChoice.swift", file: "quickstart-choice-02.swift")
+            }
+            
+            @Step {
+                **Lexend** - Research-based font that improves reading fluency for all users. Great default choice for reading-heavy apps.
+                
+                @Code(name: "FontChoice.swift", file: "quickstart-choice-03.swift")
+            }
+            
+            @Step {
+                **Inter** - Optimized for UI and screen readability. Excellent for app interfaces and smaller text sizes.
+                
+                @Code(name: "FontChoice.swift", file: "quickstart-choice-04.swift")
+            }
+            
+            @Step {
+                **Inconsolata** - Use for code, terminal output, or any content requiring monospace alignment.
+                
+                @Code(name: "FontChoice.swift", file: "quickstart-choice-05.swift")
+            }
+        }
+    }
+}
