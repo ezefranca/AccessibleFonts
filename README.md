@@ -210,7 +210,7 @@ Full documentation is available via DocC. Build documentation in Xcode:
 
 ## Example App
 
-Check out the [Example](_Example) folder for a complete SwiftUI demo showcasing all APIs.
+Check out the [Example](https://gist.github.com/ezefranca/0038cd65957806a9918446238bd14708) for a complete SwiftUI demo showcasing all APIs.
 
 ## Contributing
 
