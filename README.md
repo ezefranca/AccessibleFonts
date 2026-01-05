@@ -1,6 +1,6 @@
 # AccessibleFonts
 
-A production-quality Swift Package providing a curated collection of accessibility-focused fonts for Apple platforms.
+A Swift Package providing a curated collection of accessibility-focused fonts for Apple platforms.
 
 [![Swift](https://img.shields.io/badge/Swift-6.0-orange.svg)](https://swift.org)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%2015+%20|%20macOS%2012+%20|%20tvOS%2015+%20|%20watchOS%208+-blue.svg)](https://developer.apple.com)
