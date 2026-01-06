@@ -73,7 +73,7 @@ import Foundation
 ///
 /// All fonts are open source and free to use. See ``AccessibleFonts/licenseText(for:)``
 /// or the included license files for attribution requirements.
-public enum AccessibleFonts {
+public enum AccessibleFontsEnum {
     
     // MARK: - Registration
     
